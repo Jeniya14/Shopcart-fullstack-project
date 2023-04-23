@@ -1,0 +1,50 @@
+.register-body, .login-body{
+    text-align: center;
+    margin: 5px;
+    background-color: #f8f6f6;
+    height: 735px;
+}
+.register-main>div,  .login-main>div{
+    background-color: white;
+}
+.register-main img, .login-main img{
+ height: 75px;
+
+}
+.register-main>div,.login-main>div{
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 400px;
+    text-align: left;
+    padding: 20px;
+    margin: 20px 550px;
+}
+.register-main>div>p, .login-main>div>p{
+    font-weight: 500 ;
+    font-size: 15px;
+}
+.register-main>div>input, .login-main>div>input{
+    /* width: 100%; */
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid grey ;
+    outline: none;
+}
+.register-main>div>input:focus, .login-main>div>input:focus{
+    box-shadow: 1px 1px 8px skyblue;
+}
+.register-main span{
+    color: red;
+
+}
+.register-main>div>button, .login-main>div>button{
+    border:none;
+    background-color:rgb(254, 254, 55);
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+.register-main>div>button:focus, .login-main>div>button:focus{
+    background-color: gold;
+}
