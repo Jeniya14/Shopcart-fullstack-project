@@ -14,14 +14,15 @@
     z-index: 1;
     cursor: pointer;
     color: rgb(255, 255, 255,0.8);
-    width: 60px;
+    width: 55px;
     border-radius: 50%;
     background-color: rgba(156, 154, 154, 0.8);
     text-align: center;
-    height: 59px;
+    height: 50px;
   }
   .leftArrowStyles:hover{
     background-color: rgba(100, 98, 98, 0.8);
+  
   }
   .rightArrowStyles  {
     position: absolute;
@@ -32,11 +33,11 @@
     z-index: 1;
     cursor: pointer;
     color: rgb(255, 255, 255,0.8);
-    width: 60px;
+    width: 55px;
     border-radius: 50%;
     background-color: rgba(156, 154, 154, 0.8);
     text-align: center;
-    height: 59px;
+    height: 50px;
   }
   .rightArrowStyles:hover{
     background-color: rgba(100, 98, 98, 0.8);
@@ -64,12 +65,40 @@
   background-color: white;
   border-radius: 10px;
 }
+.bodycolor{
+  background: rgb(236, 236, 236);
+  background-attachment: fixed;
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
 .category-head{
   width: 238px;
-  height: 400px;
-  background-color: blue;
+  height:350px;
+  padding: 20px;
   text-align: center;
   border-radius: 10px;
+}
+.category-head>h4{
+  margin: 55px 10px;
+}
+.category-head-mobile{
+  background: linear-gradient(180deg, white, #a3d0f8 90%) no-repeat;
+}
+.category-head-kitchen{
+  background: linear-gradient(180deg, white, #bfb2f3 90%) no-repeat;
+}
+.category-head-office{
+  background: linear-gradient(180deg, white, #d2a9e49c 90%) no-repeat;
+}
+.category-head-homeappliance{
+  background: linear-gradient(180deg, white, #fddece 90%) no-repeat;
+}
+.category-head-electronics{
+  background: linear-gradient(180deg, white, #fafac2 90%) no-repeat;
+}
+.category-head-computer{
+  background: linear-gradient(180deg, white, #a3d0f8 90%) no-repeat;
 }
 .main-image{
   width: 1250px;
@@ -106,7 +135,7 @@
  }
  .Perslide img{
    width: 100%;
-   height: 240px;
+   height: 220px;
    border-radius: 10px;
   margin-bottom: 10px;
   transition: .2s;
@@ -143,11 +172,9 @@
   height: 59px;
   border: 0px;
 }
-.leftImageArrowStyles:hover{
-  background-color: rgba(230, 217, 217, 0.8);
-  color: rgba(156, 154, 154, 0.8);
+.leftImageArrowStyles:hover, .rightImageArrowStyles:hover{
+  background-color:white;
+  color: black;
+  box-shadow: 1px 3px 5px black;
 }
-.rightImageArrowStyles:hover{
-  background-color:  rgba(230, 217, 217, 0.8);
-  color: rgba(156, 154, 154, 0.8);
-}
+

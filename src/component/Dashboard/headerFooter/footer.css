@@ -37,7 +37,7 @@
   text-decoration: underline;
   color: grey;
 }
-.footerimg{
+.footer a>img{
     width: 30px;
     height:30px;
     padding: 5px;
@@ -47,4 +47,7 @@
 .linkto{
     text-decoration: none;
     color: grey;
+}
+.footer a>img:hover{
+    transform: scale(1.3);
 }

@@ -4,11 +4,13 @@
     padding: 10px;
     color: white;
     justify-content: space-evenly;
+    position: sticky !important;
+    top:0;
+    z-index: 999;
 }
 .header>button{
     height: 45px;
     width: 85px;
-    
 }
 .header-2{
     display: flex;
@@ -19,7 +21,6 @@
 .search-input{
     height: 43px;
     width: 600px;
-    height: 50pxpx;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     outline-style: none;
@@ -32,7 +33,7 @@
     border-bottom-right-radius: 10px;
     margin-left: -2px;
     border: none;
-    background-color:rgba(244, 198, 13, 0.885);
+    background-color:rgb(211, 171, 9);
     color: #fff;
 }
 .search-input+button img{
@@ -40,12 +41,91 @@
     width: 50px;
 }
 .header-img{
-    height: 80px;
-    width: 130px;
+    height: 60px;
+    width: 100px;
 }
 .header img{
     height: 52px;
 }
 .header-2 p{
     align-self: center;
+}
+.dropbtn{
+    padding: 10px 0px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+.ctg-flex{
+    display: flex;
+    flex-direction: column;
+}  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border:none;
+   
+  }
+  .dropdown-content_last{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border:none;
+    right: 0;
+  }
+.dropdown-content.top ,.dropdown-content_last.top{
+    margin-top: 2px;
+  }
+  
+  .dropdown-content.top::after{
+    content: " ";
+    position: absolute;
+    left: 50px;
+    top: -14px;
+    border-top: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 20px solid  #f1f1f1;
+  }
+  .dropdown-content_last.top::after{
+    content: " ";
+    position: absolute;
+    right: 50px;
+    top: -14px;
+    border-top: none;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 20px solid  #f1f1f1;
+  }
+  .dropdown-content p ,.dropdown-content_last p {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  
+  .dropdown-content p:hover ,.dropdown-content_last p:hover{
+    color: #bc26ca;
+    cursor: pointer;
+    text-decoration: underline;
+}
+  
+  .dropdown:hover .dropdown-content,.dropdown:hover .dropdown-content_last {
+    display: block;
+}
+.profile-form>div{
+padding: 10px;
 }

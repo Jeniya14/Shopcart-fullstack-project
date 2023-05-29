@@ -15,28 +15,21 @@ function Footer(){
         <div className="footer">
               <img src={logo} className='flogo'></img>
               <div className="footer-main">
-                <div>
-                    <h4>Company</h4>
-                    <ul>
-                        <li>About us</li>
-                        <li>Team</li>
-                        <li>Help & Support</li>
-                    </ul>
-                </div>
+               
                 <div>
                     <h4>Pages</h4>
                     <ul>
                         <li><Link to={'/home'} className='linkto'>Home</Link></li>
-                        <li><Link to={'/home'} className='linkto'>Home</Link></li>
+                        <li><Link to={'/cart'} className='linkto'>Cart</Link></li>
                         <li><Link to={'/home'} className='linkto'>Home</Link></li>
                     </ul>
                 </div>
                 <div>
                     <h4>Categories</h4>
                     <ul>
-                        <li >Category1</li>
-                        <li>Category1</li>
-                        <li>Category1</li>
+                        <li>Category 1</li>
+                        <li>Category 2</li>
+                        <li>Category 3</li>
                     </ul>
                 </div>
                 <div>
@@ -49,12 +42,12 @@ function Footer(){
                 </div>
                 <div>
                     <h4>Contact us</h4>
-                    <a href="#"><img src={insta} className='footerimg' ></img></a>
-                    <a href="#"><img src={whatsapp}  className='footerimg'></img></a>
-                    <a href="#"><img src={pintrest} className='footerimg' ></img></a>
-                    <a href="#"><img src={linkedin} className='footerimg' ></img></a>
-                    <a href="#"><img src={youtube} className='footerimg' ></img></a>
-                    <a href="#"><img src={twitter} className='footerimg' ></img></a>
+                    <a href="#"><img src={insta} ></img></a>
+                    <a href="#"><img src={whatsapp} ></img></a>
+                    <a href="#"><img src={pintrest} ></img></a>
+                    <a href="#"><img src={linkedin} ></img></a>
+                    <a href="#"><img src={youtube} ></img></a>
+                    <a href="#"><img src={twitter} ></img></a>
                 </div>
               
               </div>

@@ -30,8 +30,8 @@ function Imageslide({slides}){
       };
     return(
         <div className="sliderstyle">
-             <div className="leftArrowStyles" onClick={goToPrevious} >  ❰</div>
-            <div className="rightArrowStyles" onClick={goToNext}> ❱</div>
+             <div className="leftArrowStyles" onClick={goToPrevious} >❰</div>
+            <div className="rightArrowStyles" onClick={goToNext}>❱</div>
 
             
             <div style={slideStyles}></div>

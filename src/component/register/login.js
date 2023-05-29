@@ -11,8 +11,6 @@ function Login({onLogin}){
         email:"",
         password:""
     })
-    // const [email,setemail]=useState('')
-    // const [password,setpassword]=useState('')
     const [err,setErr]=useState(false)
     function handler(e){
         let copy={...login}
@@ -20,19 +18,15 @@ function Login({onLogin}){
         setLogin(copy)
     }
      function Loginvalidation(){
-
        axios.post("http://localhost:5000/user/login",login)
-
         .then((res)=>{
-            console.log(res)
-
            if(res.data==="existed"){
             setErr(false)
             onLogin();
             history.push("/home")
+            sessionStorage.setItem('user',JSON.stringify({'email':login.email,'password':login.password}))
         }else {
-            setErr(true)
-            
+            setErr(true) 
         } 
         })
         .catch((err)=>{
@@ -42,8 +36,10 @@ function Login({onLogin}){
     return(
         <div className="login-body">
            <div className="login-main">
+            
                 <img src={logo} alt="logo"></img>
                 <div>
+                    
                 <h2>Sign in</h2>
                 {err&& <p>Incorrect email or password </p>}
                 <p>Email</p>

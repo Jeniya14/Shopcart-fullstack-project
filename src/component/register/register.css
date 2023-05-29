@@ -8,7 +8,7 @@
     background-color: white;
 }
 .register-main img, .login-main img{
- height: 75px;
+ height: 70px;
 
 }
 .register-main>div,.login-main>div{
@@ -24,7 +24,7 @@
     font-size: 15px;
 }
 .register-main>div>input, .login-main>div>input{
-    /* width: 100%; */
+
     padding: 10px;
     border-radius: 5px;
     border:1px solid grey ;

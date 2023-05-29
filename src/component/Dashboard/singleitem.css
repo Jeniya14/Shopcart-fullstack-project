@@ -1,0 +1,25 @@
+.main-div{
+    display: flex;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.main-div-img{
+    padding: 50px;
+}
+.main-div-content{
+    padding: 30px 50px;
+    border-left: 1px solid rgb(190, 190, 190);
+}
+.main-div-content>div{
+    font-size: 24px;
+}
+.main-div-content>p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 5px;
+}
+.review-content{
+    margin-block-start: 0em;
+  text-indent: 10px;
+}

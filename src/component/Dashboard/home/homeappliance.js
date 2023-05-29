@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import "../home/home.css"
+import {Button,Typography} from "@mui/material"
 function HomeAppliances() {
   const [data, setData] = useState([]);
   const history=useHistory();
@@ -31,8 +32,8 @@ function Allitems(category){
 
   return (
     <div className='category-main'>
-      <div className='category-head'><p> Best of Mobile</p>
-      <button onClick={()=>Allitems('Home&Kitchen')} >Veiw All</button>
+      <div className='category-head category-head-homeappliance'><Typography variant="h4"> Home Appliances</Typography>
+      <Button variant="contained"  onClick={()=>Allitems('Home&Kitchen')} >Veiw All</Button>
       </div>
 
       <div className="main-image">

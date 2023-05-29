@@ -1,0 +1,54 @@
+.oredrCheck-main{
+    background-color: azure;
+    padding: 10px;
+    width: 800px;
+}
+.oredrCheck-main>div{
+    display: flex;
+    background-color: white;
+   
+}
+.address-css>div>span{
+ color: blueviolet;
+}
+.address-css>div{
+padding: 10px;
+    
+}
+.oredrCheck-main img{
+    height: 150px;
+}
+
+/* order success */
+.maindiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: blueviolet;
+    height: 725px;
+    text-align: center;
+    padding: 10px;
+}
+.maindiv-div{
+    /* margin-top: 150px; */
+    width:450px;
+    height: 400px;
+    background-color: white;
+    align-self: center;
+    margin-top: 1px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px black;
+}
+
+.maindiv img{
+    height :200px;
+    border-radius: 50%;
+    
+}
+.maindiv-div h2{
+    color:rgb(3, 155, 3);
+}
+.maindiv-div p{
+    color: grey;
+}
