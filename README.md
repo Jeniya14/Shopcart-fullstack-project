@@ -15,9 +15,10 @@ ShopCart is a full-stack e-commerce application inspired by platforms like Amazo
 
 - **Frontend:**
   - React.js
+  - Material-UI
   - HTML
   - CSS
-  - Material-UI
+  
 
 - **Backend:**
   - Node.js
@@ -149,6 +150,6 @@ The MongoDB database contains four main collections:
 
 ## Server File
 
-The server file is hosted separately on GitHub. You can find it [here](link).
+The server file is hosted separately on GitHub. You can find it [https://github.com/Jeniya14/Shopcart-backend/](https://github.com/Jeniya14/Shopcart-backend/).
 
 Feel free to explore the code and contribute to the project!
