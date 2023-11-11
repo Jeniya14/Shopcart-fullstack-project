@@ -1,70 +1,154 @@
-# Getting Started with Create React App
+# ShopCart Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ShopCart is a full-stack e-commerce application inspired by platforms like Amazon and Flipkart. The project is built using React.js, HTML, CSS, Material-UI for the frontend, and Node.js, Express.js, and MongoDB for the backend.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+1. [Technologies Used](#technologies-used)
+2. [User Flow](#user-flow)
+3. [Project Structure](#project-structure)
+4. [Screenshots](#screenshots)
+5. [Database Structure](#database-structure)
+6. [Server File](#server-file)
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:**
+  - React.js
+  - HTML
+  - CSS
+  - Material-UI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Backend:**
+  - Node.js
+  - Express.js
+  - MongoDB
+  
+## User Flow
 
-### `npm test`
+The application follows a user-friendly flow:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Login and Register:** Users can log in or register with validation and authentication. Only logged-in users can access the home page, and unauthorized attempts to access the home page via URL manipulation are prevented.
 
-### `npm run build`
+2. **Home Page:** Features a search bar, profile button, cart icon (with item count badge), and logout option. The profile page displays user information stored in MongoDB. The header includes a menu for categories, sub-categories, and an image slider. Display items from five main categories, allowing users to view all items or click on a specific item for detailed information
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Category Pages:** Display items from all main categories, allowing users to view all items or click on a specific item for detailed information.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Single Item Page:** Shows detailed information about a selected item, including images, prices, discounts, ratings, and a tab navigation system for full product description and reviews.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. **Cart Page:** Displays the current items in the cart, allowing users to delete items, clear the entire cart, and adjust item quantities. Previous orders are also visible.
 
-### `npm run eject`
+6. **Checkout Page:** Utilizes Material-UI's stepper component for a three-step process: delivery address, order summary, and payment options.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+7. **Order Success Page:** Confirms a successful order placement.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The project is divided into two main folders:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Frontend:** Contains the React.js application.
+- **Server:** Contains the Node.js and Express.js backend.
 
-## Learn More
+## Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Login Page and sign up
+![Login Page](/screenshots/login.png)
+![register Page](/screenshots/register.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Home Page
+![Home Page](/screenshots/home1.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Home Page](/screenshots/home2.png)
+![Home Page](/screenshots/home3.png)
+![Home Page](/screenshots/home4.png)
 
-### Analyzing the Bundle Size
+### Search Page
+![ Search Page](/screenshots/search.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Profile Page
+![Profile Page](/screenshots/profile.png)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Category Page
+![ Category Page](/screenshots/category.png)
+![ Category Page](/screenshots/category1.png)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Detailed Page
+![Detailed Page](/screenshots/singlepage.png)
+![Detailed Page](/screenshots/singlepage1.png)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Cart Page
+![Cart Page](/screenshots/cart.png)
+![Cart Page](/screenshots/cart1.png)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Checkout Page
+![Checkout Page](/screenshots/checkout.png)
+![Checkout Page](/screenshots/checkout1.png)
+![Checkout Page](/screenshots/checkout2.png)
+![Checkout Page](/screenshots/success.png)
+
+
+### Skeletons
+![Skeleton Page](/screenshots/skeleton.png)
+![Skeleton Page](/screenshots/skeleton1.png)
+
+## Database Structure
+
+The MongoDB database contains four main collections:
+
+1. **User:**
+   - _id
+   - name
+   - email
+   - password
+   - address
+   - mobileNumber
+
+2. **Products:**
+   - _id
+   - product_id
+   - product_name
+   - category
+   - discounted_price
+   - actual_price
+   - discount_percentage
+   - rating
+   - rating_count
+   - about_product
+   - user_id
+   - user_name
+   - review_id
+   - review_title
+   - review_content
+   - img_link
+   - product_link
+
+3. **Cart:**
+   - _id
+   - email
+   - items
+     - itemId
+     - itemName
+     - itemPrice
+     - quantity
+     - itemImg
+
+4. **Ordered:**
+   - _id
+   - email
+   - items
+     - itemId
+     - itemName
+     - itemPrice
+     - quantity
+     - itemImg
+
+## Server File
+
+The server file is hosted separately on GitHub. You can find it [here](link).
+
+Feel free to explore the code and contribute to the project!
